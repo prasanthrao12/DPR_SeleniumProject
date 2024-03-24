@@ -1,34 +1,35 @@
 package baseTest;
 
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-
+import org.testng.annotations.BeforeTest;
 import com.project.driver.BrowserFactory;
+import utilies.Accessproperties;
 
 
-public class BaseTest {
-	static WebDriver driver= BrowserFactory.createDriver("chrome");
-	static BrowserFactory Browser;	
-	
-	
-@BeforeMethod
-public static void Setup() 
+public class BaseTest extends BrowserFactory
 {
-	driver.get("https://www.youtube.com/watch?v=HOf0qkOUSUs&list=PLL34mf651faNP0ISiU3oQFmRQRis-9blX");
-}
+	public WebDriver driver;	
 	
-@AfterMethod
-public static void Endtest() 
-{
-	driver.quit();
-}
-
-@Test
-public static void ts() {
 	
-}
-
+		
+	@BeforeTest
+	public void setup()  {
+   		
+    driver=createDriver("chrome",Accessproperties.GettingValues("Base_URL"));
+	driver.manage().window().maximize();
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
+	}
+	
+	
+	
+	
+	@AfterMethod
+	public void EndTest() {
+		
+		driver.quit();
+	}
 }
