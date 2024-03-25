@@ -10,7 +10,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BrowserFactory {
 
-    public WebDriver createDriver(String browserType,String URl) 
+    public  WebDriver createDriver(String browserType,String URl) 
     {
         WebDriver driver;
         
@@ -25,5 +25,14 @@ public class BrowserFactory {
         }
       driver.get(URl);
        return driver; 
+    }
+    
+    public static WebDriver getDriver() {
+    	WebDriver driver;
+    	System.setProperty("webdriver.chrome.driver", "D:\\Myspace\\DPRSeleniumproject\\Drivers\\chromedriver_win32\\chromedriver.exe");
+        driver = new ChromeDriver();
+    	
+		return driver;
+    	
     }
 }
