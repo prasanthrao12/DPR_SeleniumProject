@@ -17,7 +17,9 @@ public class BaseTest extends BrowserFactory
 {
 	 public WebDriver driver;	
 	 protected Loginpage loginpage;
-	
+	 
+	 
+	 
 	@BeforeMethod
 	public void setup()  {
 		
@@ -27,9 +29,6 @@ public class BaseTest extends BrowserFactory
 	loginpage=new Loginpage(driver);
 	
 	}
-	
-	
-	
 	
 	@AfterMethod
 	public void EndTest() {
