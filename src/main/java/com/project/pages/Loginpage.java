@@ -49,5 +49,22 @@ public class Loginpage {
     	Login_Button.click();
     }
     
-
+    public   void Enter_Username(String username) {
+    	log.infoLogs("User Entered username in the username field");
+    	executes.HighLightWebElement(Username_Input,driver);
+    	Username_Input.sendKeys(username);
+    }
+    
+    public   void Enter_Password(String Password) {
+    	log.infoLogs("User Entered password in the Password field");
+    	executes.HighLightWebElement(Password_Input,driver);
+    	Password_Input.sendKeys(Password);
+    }
+   
+   
+    public void Login_Tests(String username,String Password) {
+    	Enter_Username(username);
+    	Enter_Password(Password);
+    	Hit_Login_Button();
+    }
 }

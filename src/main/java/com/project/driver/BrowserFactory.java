@@ -10,7 +10,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BrowserFactory {
 
-    public  WebDriver createDriver(String browserType,String URl) 
+    public static  WebDriver createDriver(String browserType,String URl) 
     {
         WebDriver driver;
         

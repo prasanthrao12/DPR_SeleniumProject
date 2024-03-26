@@ -5,7 +5,7 @@
     <classes>
       <class name="loginPageTests.Test01">
         <methods>
-          <include name="TestLogin"/>
+          <include name="LoginTest"/>
           <include name="EndTest"/>
           <include name="setup"/>
         </methods>
