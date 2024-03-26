@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-25T23:19:02 IST" name="Default suite" finished-at="2024-03-25T23:19:13 IST" duration-ms="11420">
+  <suite started-at="2024-03-26T14:49:07 IST" name="Default suite" finished-at="2024-03-26T14:49:20 IST" duration-ms="12481">
     <groups>
     </groups>
-    <test started-at="2024-03-25T23:19:02 IST" name="Default test" finished-at="2024-03-25T23:19:13 IST" duration-ms="11420">
+    <test started-at="2024-03-26T14:49:07 IST" name="Default test" finished-at="2024-03-26T14:49:20 IST" duration-ms="12481">
       <class name="loginPageTests.Test01">
-        <test-method is-config="true" signature="setup()[pri:0, instance:loginPageTests.Test01@52af26ee]" started-at="2024-03-25T23:19:02 IST" name="setup" finished-at="2024-03-25T23:19:09 IST" duration-ms="7458" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:loginPageTests.Test01@741a8937]" started-at="2024-03-26T14:49:07 IST" name="setup" finished-at="2024-03-26T14:49:15 IST" duration-ms="7502" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestLogin()[pri:0, instance:loginPageTests.Test01@52af26ee]" started-at="2024-03-25T23:19:09 IST" name="TestLogin" finished-at="2024-03-25T23:19:13 IST" duration-ms="3505" status="PASS">
+        <test-method signature="TestLogin()[pri:0, instance:loginPageTests.Test01@741a8937]" started-at="2024-03-26T14:49:15 IST" name="TestLogin" finished-at="2024-03-26T14:49:19 IST" duration-ms="4527" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="EndTest()[pri:0, instance:loginPageTests.Test01@52af26ee]" started-at="2024-03-25T23:19:13 IST" name="EndTest" finished-at="2024-03-25T23:19:13 IST" duration-ms="389" status="PASS">
+        <test-method is-config="true" signature="EndTest()[pri:0, instance:loginPageTests.Test01@741a8937]" started-at="2024-03-26T14:49:19 IST" name="EndTest" finished-at="2024-03-26T14:49:20 IST" duration-ms="409" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EndTest -->

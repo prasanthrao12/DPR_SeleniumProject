@@ -32,19 +32,19 @@ public class Loginpage {
   LogUtils log=new LogUtils(); 
    
     public   void Enter_Username() {
-    	//log.info("User enter username in the userInput field");
+    	log.infoLogs("User Entered username in the username field");
     	executes.HighLightWebElement(Username_Input,driver);
     	Username_Input.sendKeys(Accessproperties.GettingValues("UserName"));
     }
     
     public   void Enter_Password() {
-    	//log.info("User enter Password in the PasswordInput field");
+    	log.infoLogs("User Entered password in the Password field");
     	executes.HighLightWebElement(Password_Input,driver);
     	Password_Input.sendKeys(Accessproperties.GettingValues("Password"));
     }
     
     public   void Hit_Login_Button() {
-    	//log.info("User Hits the Login button field");
+    	log.infoLogs("User hitsthe Login button field");
     	executes.HighLightWebElement(Login_Button,driver);
     	Login_Button.click();
     }
