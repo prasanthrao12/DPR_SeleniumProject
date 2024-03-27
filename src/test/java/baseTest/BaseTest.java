@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 
 import com.project.driver.BrowserFactory;
+import com.project.pages.Homepage;
 import com.project.pages.Loginpage;
 
 import utilies.Accessproperties;
@@ -19,7 +20,7 @@ public class BaseTest extends Dataproviders
 {
 	 public WebDriver driver;	
 	 protected Loginpage loginpage;
-	 
+	 protected Homepage homepage;
 	 Dataproviders data=new Dataproviders();
 	 
 	@BeforeMethod()
@@ -30,13 +31,14 @@ public class BaseTest extends Dataproviders
     driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
 	loginpage=new Loginpage(driver);
+	homepage=new Homepage(driver);
 	data.LoginData();
 	}
 	
 	@AfterMethod
 	public void EndTest() {
 		
-		driver.quit();
+		//driver.quit();
 	}
 	
 	

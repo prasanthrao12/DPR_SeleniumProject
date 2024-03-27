@@ -16,5 +16,16 @@ public class Dataproviders {
 	}
 	
 	
+	
+	   
+   @DataProvider(name="EmployeeInformation_TestData01")
+   public Object Employee_Information01() {
+		
+		
+	   
+     return new Object[][] {{"Prasanth","ramesh","143"}};
+		
+	}
+   
 
 }
