@@ -19,14 +19,16 @@ public class Homepage {
     Js_Executor executes=new Js_Executor();
     LogUtils log=new LogUtils(); 
     
-    @FindBy (xpath="//div/label[text()='Employee Name']/parent::div/following-sibling::div/div/div/input") public  WebElement Employee_Name_Input; 
-    @FindBy (xpath="//div/label[text()='Employee Id']/parent::div/following-sibling::div/input")    public  WebElement Employee_Id_Input; 
-    @FindBy (xpath="(//form/div/div/div/div)[3]")    public  WebElement Employment_Status_Input; 
-    @FindBy (xpath="(//form/div/div/div/div)[4]")    public  WebElement Include_Input; 
+    @FindBy (xpath="//div/label[text()='Employee Name']/parent::div/following-sibling::div/div/div/input")      public  WebElement Employee_Name_Input; 
+    @FindBy (xpath="//div/label[text()='Employee Id']/parent::div/following-sibling::div/input")                public  WebElement Employee_Id_Input; 
+    @FindBy (xpath="")    public  WebElement Employment_Status_Input; 
+    @FindBy (xpath="")    public  WebElement Include_Input; 
     @FindBy (xpath="//div/label[text()='Supervisor Name']/parent::div/following-sibling::div/div/div/input")    public  WebElement Supervisor_Name_Input; 
-    @FindBy (xpath="(//form/div/div/div/div)[6]")    public  WebElement Job_Title_Input; 
-    @FindBy (xpath="(//form/div/div/div/div)[7]")    public  WebElement Sub_Unit_Input; 
-    @FindBy (xpath="//button[text()=' Search ']")    public  WebElement Search_Button; 
+    @FindBy (xpath="")    public  WebElement Job_Title_Input; 
+    @FindBy (xpath="")    public  WebElement Sub_Unit_Input;
+    
+    @FindBy (xpath="")    public  WebElement Search_Button;
+    
     @FindBy (xpath="//ul/li/a/span[text()='PIM']")   public  WebElement PIM_Menu_Option;
     
   
