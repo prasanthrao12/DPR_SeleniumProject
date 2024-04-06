@@ -19,4 +19,10 @@ public class Test002 extends BaseTest{
 		loginpage.validateForgotyourpassword();
 		
 	}
+	
+	@Test
+	public void Test2() {
+		loginpage.ValidateFieldsIntheLoginpage();
+		
+	}
 }

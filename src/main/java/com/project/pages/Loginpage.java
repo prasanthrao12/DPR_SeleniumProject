@@ -29,6 +29,8 @@ public class Loginpage {
   @FindBy (xpath="//button[text()=' Login ']")   public  WebElement Login_Button;
    
   @FindBy (xpath="//p[text()='Forgot your password? ']")  public WebElement Forgot_your_password ;
+
+  @FindBy(xpath="//p/a[@href='http://www.orangehrm.com']") public WebElement OrangeHRMLinkText;
   
   Js_Executor executes=new Js_Executor();
   LogUtils log=new LogUtils(); 
@@ -37,10 +39,29 @@ public class Loginpage {
   {
 	  log.infoLogs("highlight the Forgot ypur password link");
   	  executes.HighLightWebElement(Forgot_your_password,driver);
-	  
- 
+  
+  
   }
   
+  public void ValidateFieldsIntheLoginpage () {
+	  
+	  // username 
+	  log.infoLogs("Username_Input");
+  	  executes.HighLightWebElement(Username_Input,driver);
+  	 //password
+  	  log.infoLogs("Password_Input");
+	  executes.HighLightWebElement(Password_Input,driver);
+	//login Button
+	  log.infoLogs("Login_Button");
+	  executes.HighLightWebElement(Login_Button,driver);
+	//forgot password Link
+	  log.infoLogs("Forgot_your_password");
+	  executes.HighLightWebElement(Forgot_your_password,driver);
+	//Orange HRM Link Text
+	  log.infoLogs("OrangeHRMLinkText");
+	  executes.HighLightWebElement(OrangeHRMLinkText,driver);
+	  
+  }
   
     public   void Enter_Username() {
     	log.infoLogs("User Entered username in the username field");

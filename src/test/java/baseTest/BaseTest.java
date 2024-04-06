@@ -38,7 +38,7 @@ public class BaseTest extends Dataproviders
 	@AfterMethod
 	public void EndTest() {
 		
-		//driver.quit();
+		driver.quit();
 	}
 	
 	
