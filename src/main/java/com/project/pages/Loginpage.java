@@ -28,9 +28,20 @@ public class Loginpage {
   @FindBy (xpath="//input[@name='password']")    public  WebElement Password_Input;
   @FindBy (xpath="//button[text()=' Login ']")   public  WebElement Login_Button;
    
+  @FindBy (xpath="//p[text()='Forgot your password? ']")  public WebElement Forgot_your_password ;
+  
   Js_Executor executes=new Js_Executor();
   LogUtils log=new LogUtils(); 
-   
+  
+  public void validateForgotyourpassword()
+  {
+	  log.infoLogs("highlight the Forgot ypur password link");
+  	  executes.HighLightWebElement(Forgot_your_password,driver);
+	  
+ 
+  }
+  
+  
     public   void Enter_Username() {
     	log.infoLogs("User Entered username in the username field");
     	executes.HighLightWebElement(Username_Input,driver);
