@@ -23,7 +23,7 @@ public class Dataproviders {
 		
 		
 	   
-     return new Object[][] {{"Prasanth","ramesh","143"}};
+     return new Object[][] {{"Prasanth","ramesh","143","Part-Time Internship","Current and Past Employees","Automaton Tester"}};
 		
 	}
    

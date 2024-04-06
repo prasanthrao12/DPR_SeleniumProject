@@ -7,7 +7,7 @@
         <methods>
           <include name="EndTest"/>
           <include name="setup"/>
-          <include name="employeeSeachTest"/>
+          <include name="employeeSeachTest" invocation-numbers="0"/>
         </methods>
       </class> <!-- loginPageTests.EmployeeSearchTest -->
     </classes>
